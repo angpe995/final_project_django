@@ -49,15 +49,20 @@
                         <div class="card-body">{{lesson.content}}</div>
                     </div>
                 {% endfor %}
-            </div>
+            {% if user.is_authenticated %}
+            </div id="exam" class="collapse">
+            
+                
+
+
             <!-- Task: show questions and choices -->
             <!-- <HINT> Use Bootstrap Collapse to hide exam first, more details could be found here
-            https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp-->
+            <https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp-->
 
             <!--
 
             A collapse example here:
-            <div id="exam" class="collapse">
+            div id="exam" class="collapse">
                 Click to expand elements within the collapse div
                 </div>
 
